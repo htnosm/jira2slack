@@ -1,0 +1,13 @@
+version: '3'
+services:
+  jira2slack:
+    build: jira2slack
+    container_name: jira2slack
+    volumes:
+      - ./jira2slack/:/app/
+    environment:
+      TZ: "Asia/Tokyo"
+      INTERVAL: 300
+      CHECK_URL: "https://example.com"
+    working_dir:
+      /app
