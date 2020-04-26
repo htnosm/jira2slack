@@ -61,3 +61,15 @@ cat <<_EOF > ./jira2slack/var/last_publish.TESTPJ.json
 }
 _EOF
 ```
+
+## Known Issue
+
+### アクティビティ取得失敗
+
+```
+<msg name="gadget.activity.stream.error.loading.feed">最近のアクティビティを取得しようとしたときにエラーが発生しました。</msg>
+```
+
+* [Invalid Character Causing Activity Stream Not Rendering Properly \(Invalid white space character in text to output\) \- Atlassian Documentation](https://confluence.atlassian.com/jirakb/invalid-character-causing-activity-stream-not-rendering-properly-invalid-white-space-character-in-text-to-output-432276561.html)
+    * 特殊文字( "<",">" ?) を含んだ場合に rss 不正で取得不可となる
+    * IncompleteRead を Catch、取得行数減らして再試行する処理を追加済
