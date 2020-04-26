@@ -6,7 +6,6 @@ services:
     volumes:
       - ./jira2slack/:/app/
     environment:
-      TZ: "Asia/Tokyo"
       INTERVAL: 300
       CHECK_URL: "https://example.com"
     working_dir:
