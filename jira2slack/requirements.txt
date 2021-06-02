@@ -8,4 +8,4 @@ PyYAML==5.4.1
 requests==2.23.0
 slackweb==1.0.5
 soupsieve==2.0
-urllib3==1.25.9
+urllib3==1.26.5
