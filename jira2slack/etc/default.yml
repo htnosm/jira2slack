@@ -1,4 +1,5 @@
-jira_key: 'JIRA'
+jira_projects: 'JIRA' # Comma-separated string
+jira_labels: '' # Comma-separated string. If empty, no filtering will be done on the label.
 jira_url: 'https://jira.example.com'
 jira_max_results: 100
 auth_user: 'jira-user'
