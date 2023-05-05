@@ -12,7 +12,7 @@ Slack Integration や RSS が用意されているが、何かしらの理由で
 
 ## Requirements
 
-* python 3.8+
+* python 3.9+
 * docker
 
 ## Installation
@@ -28,7 +28,7 @@ cat <<_EOF > jira2slack/etc/TESTPJ.yml
 jira_key: 'Your JIRA Project Key'
 jira_url: 'https://jira.example.com'
 auth_user: 'Your Username'
-auth_password: 'Your Password'
+auth_password: 'Your API Token'
 slack_webhook_url: 'Your Slack Incoming Webhook URL'
 slack_channel: 'Your Slack Channel # e.g.) "#general'
 slack_username: 'Slack bot username'
@@ -49,7 +49,7 @@ docker-compose down
 ```
 pip install -r jira2slack/requirements.txt
 
-CHECK_URL=https://example.com ./jira2slack/src/docker-entrypoint.sh
+./jira2slack/src/docker-entrypoint.sh
 ```
 
 ### 初回実行時等で、通知から現在日時より前を除外する
