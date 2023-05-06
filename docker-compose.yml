@@ -7,6 +7,5 @@ services:
       - ./jira2slack/:/app/
     environment:
       INTERVAL: 300
-      CHECK_URL: "https://example.com"
     working_dir:
       /app

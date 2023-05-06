@@ -31,7 +31,6 @@ auth_user: 'Your Username'
 auth_password: 'Your API Token'
 slack_webhook_url: 'Your Slack Incoming Webhook URL'
 slack_channel: 'Your Slack Channel # e.g.) "#general'
-slack_username: 'Slack bot username'
 _EOF
 ```
 

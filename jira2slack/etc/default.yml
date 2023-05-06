@@ -4,7 +4,7 @@ jira_url: 'https://jira.example.com'
 jira_max_results: 100
 auth_user: 'jira-user'
 auth_password: jira-password'
-slack_webhook_url: = 'https://hooks.slack.com/services/XXXXXXXXX/YYYYYYYYY/zzzzzzzzzzzzzzzzzzzzzzzz'
+slack_webhook_url: 'https://hooks.slack.com/services/XXXXXXXXX/YYYYYYYYY/zzzzzzzzzzzzzzzzzzzzzzzz'
 slack_color: '#0747a6' # e.g.) good、warning、danger、or color code
 slack_channel: '#dummy' # e.g.) "#general"
 slack_username: 'JIRA' # e.g.) incoming-webhook
