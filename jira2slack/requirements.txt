@@ -7,7 +7,7 @@ Cython==3.0.9
 feedparser==6.0.11
 idna==3.7
 PyYAML==6.0.1
-requests==2.31.0
+requests==2.32.0
 sgmllib3k==1.0.0
 slackweb==1.0.5
 soupsieve==2.5
