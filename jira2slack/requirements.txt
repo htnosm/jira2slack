@@ -11,4 +11,4 @@ requests==2.32.0
 sgmllib3k==1.0.0
 slackweb==1.0.5
 soupsieve==2.5
-urllib3==2.2.1
+urllib3==2.2.2
