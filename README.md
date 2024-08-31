@@ -48,7 +48,8 @@ docker-compose down
 ```
 pip install -r jira2slack/requirements.txt
 
-./jira2slack/src/docker-entrypoint.sh
+cd ./jira2slack
+./src/docker-entrypoint.sh
 ```
 
 ### 初回実行時等で、通知から現在日時より前を除外する
