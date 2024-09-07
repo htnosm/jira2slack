@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 python:3.12-alpine
+FROM --platform=linux/amd64 python:3.13.0a1-alpine
 
 RUN apk --update --no-cache add \
   curl
